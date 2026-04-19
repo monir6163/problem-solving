@@ -20,3 +20,9 @@ function findLargestNumber(arr: number[]): number {
   }
   return largestNum;
 }
+//3 check palindrome
+function isPalindrome(s: string): boolean {
+  const cleanedString = s.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
+  const reversedString = cleanedString.split("").reverse().join("");
+  return cleanedString === reversedString;
+}
